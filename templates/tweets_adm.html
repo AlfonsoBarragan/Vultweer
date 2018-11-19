@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<main role="main" class="container">
+    <div method="get" class="my-3 p-3 bg-main-container rounded shadow-sm">
+    <h6 class="border-bottom pb-2 mb-0 text-title-container">Tweets operation</h6>
+    <label></label>
+    <form action="{{ url_for('tweet') }}"  method=post>
+            <p>
+              <label class="text-bold-tweet" type="search">Text: </label>
+              <input type=text name=tweetText size=40>
+              <input type=submit value="Tweet">
+            </p>
+          </form>
+      
+          <form action="{{ url_for('deleteTweet') }}"  method=post>
+            <p>
+                <label class="text-bold-tweet" type="search">idTweet: </label>
+                <input type=text name=idTweetDelete size=40>
+                <input type=submit value="Delete"> 
+            </p>
+          </form>
+      
+          <form action="{{ url_for('retweet') }}"  method=post>
+            <p>
+                <label class="text-bold-tweet" type="search">idTweet: </label> 
+                <input type=text name=idRepostTweet size=40>
+                <input type=submit value="Retweet"> 
+            </p>
+          </form>
+      
+          <form action="{{ url_for('follow') }}"  method=post>
+            <p>
+                <label class="text-bold-tweet" type="search">User id: </label> 
+                <input type=text name=idUser size=40>
+                <input type=submit value="Follow">
+            </p>
+            <p>
+                <label class="text-bold-tweet" type="search">User name: </label> 
+                <input type=text name=idName size=40>
+                <input type=submit value="Follow"> 
+            </p>
+          </form>      
+    </div>
+</main>
+
+{% endblock %}

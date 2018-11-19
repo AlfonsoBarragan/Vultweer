@@ -1,0 +1,138 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  background: #292D40
+}
+
+body {
+  padding-top: 56px;
+}
+
+p.message {
+  color: #335E79;
+  padding: 10px;
+  background: #CADEEB;
+}
+
+p.error {
+  color: #783232;
+  padding: 10px;
+  background: #EBCACA;
+}
+
+input, textarea {
+  font    : .9em/1.5em "handwriting", sans-serif;
+  
+  padding : 0 10px;
+  margin  : 0;
+  width   : 240px;
+  height: 2em; /* for IE */
+  vertical-align: left;
+
+}
+
+button {
+  padding      : 5px;
+
+  font         : bold .6em sans-serif;
+  border       : 2px solid #333;
+  border-radius: 5px;
+  background   : none;
+
+  cursor       : pointer;
+
+-webkit-transform: rotate(-1.5deg);
+   -moz-transform: rotate(-1.5deg);
+    -ms-transform: rotate(-1.5deg);
+     -o-transform: rotate(-1.5deg);
+        transform: rotate(-1.5deg);
+}
+
+button:hover,
+button:focus {
+  outline   : none;
+  background: #000;
+  color   : #FFF;
+}
+
+label[type=search]{
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+  }
+
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left, visibility;
+  }
+  .offcanvas-collapse.open {
+    left: 0;
+    visibility: visible;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgb(255, 57, 26);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #ff3a1a;
+}
+
+.nav-underline .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.text-white-50 { color: rgba(255, 255, 255, .5); }
+.text-bold-tweet { color: #8E85B4; }
+.text-text-tweet { color: #adaeca; } 
+.text-title-container { color: #e47713; }
+.text-nav-bar { color: #192527}
+
+.bg-all { background-color: #292D40; }
+.bg-nav-bar { background-color: rgba(74, 64, 160, 0.877)}
+.bg-main-container { background-color: #385074; }
+
+.border-container {color: #323138}
+
+.lh-100 { line-height: 1; }
+.lh-125 { line-height: 1.25; }
+.lh-150 { line-height: 1.5; }
